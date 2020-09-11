@@ -12,7 +12,7 @@ output "application_endpoint" {
     value = "${lookup(var.deployment_endpoint, "${var.deployment_environment}")}.${var.google_domain_name}"
 }
 variable  "deployment_image" {
-    default = "docker.beckinc.org/hello-world-job-dev-feature:adb2357"
+    default = "docker.beckinc.org/hello-world-dev-feature:d51256d"
 }
 variable "deployment_environment" {
     default = "stage"
